@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# Pathways: Visual Graph Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pathways is a React + TypeScript web application that empowers users to create
+and visualize connected graphs of data in an intuitive and visually appealing
+manner.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Node Creation**: Create nodes to represent data points.
+- **Graph Connections**: Draw connections between nodes in any of the 8 cardinal
+  directions.
+- **Node Customization**: Choose node sizes to represent different types of
+  relationships.
+- **Color Options**: Select from 8 standard colors to enhance graph aesthetics.
+- **Future Enhancements**:
+  - Save graphs for later use.
+  - Import and share graphs with others.
 
-## Expanding the ESLint configuration
+## Example Use Case
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Imagine creating a graph to represent the timeline of video game console
+history:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Nodes for each generation (e.g., Generation 1, Generation 2, etc.).
+- Connections to consoles within each generation.
+- Additional nodes for popular games, sales numbers, and manufacturers.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Pathways makes it easy to visually organize and explore such data.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js (v16 or higher)
+- npm (v8 or higher)
+
+### Installation
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/LeePresswood/Pathways.git
+   cd pathways
+   ```
